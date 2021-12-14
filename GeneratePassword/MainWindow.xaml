@@ -1,0 +1,23 @@
+﻿<Window x:Class="GeneratePassword.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GeneratePassword"
+        mc:Ignorable="d"
+        Title="Генератор паролей" Height="136" Width="250">
+    <Canvas>
+        <TextBox Name="tbPass" Height="30" Margin="10,18,279,216" Canvas.Left="10" Canvas.Top="5" Width="192"   />
+
+        <Button Name="btnGenPassword" Content="Генерировать пароль" Background="#FF007C80" Foreground="White" Margin="102,67,361,167" Click="btnGenPassword_Click" RenderTransformOrigin="0.5,0.5" Canvas.Left="-76" Height="26" Canvas.Top="-1" BorderBrush="#FFA77E7E"  >
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-0.605"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-0.196"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+    </Canvas>
+</Window>
